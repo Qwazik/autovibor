@@ -19,6 +19,7 @@ header.main-header
 						span.ico
 						a(href="") Новости
 			.top-time#time
+				.ico
 				span.day
 				span.day-num
 				span.day-month
@@ -40,18 +41,44 @@ header.main-header
 						span 92 22 54
 					.name Отдел продаж
 	.main-menu
-		.container
-			a(href="").catalog-button 
-				span.ico
-				span Каталог
-			.menu__wrap.clearifx
-				ul.menu
-					li.main-menu__item: a(href="#") PEZZAIOLI   
-					li.main-menu__item: a(href="#") GARDNER DENVER   
-					li.main-menu__item: a(href="#") MENCI     
-					li.main-menu__item: a(href="#") ПРАЙС ЛИСТ     
-					li.main-menu__item: a(href="#") ЛИЗИНГ     
-					li.main-menu__item: a(href="#") СЕРВИС     
-					li.main-menu__item: a(href="#") ДИЛЕРСКАЯ СЕТЬ WABCO     
-					li.main-menu__item: a(href="#") ДИЛЕРСКАЯ СЕТЬ BPW     
-					li.main-menu__item: a(href="#") РЕМОНТ
+		.main-menu__top
+			.container
+				a(href="").catalog-button#catalogButton
+					span.ico
+						span
+						span
+						span
+						span
+					span Каталог
+				.menu__wrap.clearifx
+					ul.menu
+						li.main-menu__item: a(href="#") PEZZAIOLI   
+						li.main-menu__item: a(href="#") GARDNER DENVER   
+						li.main-menu__item: a(href="#") MENCI     
+						li.main-menu__item: a(href="#") ПРАЙС ЛИСТ     
+						li.main-menu__item: a(href="#") ЛИЗИНГ     
+						li.main-menu__item: a(href="#") СЕРВИС     
+						li.main-menu__item: a(href="#") ДИЛЕРСКАЯ СЕТЬ WABCO     
+						li.main-menu__item: a(href="#") ДИЛЕРСКАЯ СЕТЬ BPW     
+						li.main-menu__item: a(href="#") РЕМОНТ
+		.main-menu__dropdown
+			.container
+				ul.tabs-category
+					li.tabs-category__wrap
+						span.tabs-category__item
+							a.tabs-category__link(href="#") Новые<br/> скотовозы
+					li.tabs-category__wrap
+						span.tabs-category__item
+							a.tabs-category__link(href="#") Новые<br/> кормовозы
+					li.tabs-category__wrap
+						span.tabs-category__item
+							a.tabs-category__link(href="#") Новые<br/> птицевозы
+					li.tabs-category__wrap
+						span.tabs-category__item
+							a.tabs-category__link(href="#") Б/у<br/> техника
+					li.tabs-category__wrap
+						span.tabs-category__item
+							a.tabs-category__link(href="#") Ремонт<br/> кормовозов
+					li.tabs-category__wrap
+						span.tabs-category__item
+							a.tabs-category__link(href="#") Другая<br/> техника

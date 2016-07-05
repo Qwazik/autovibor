@@ -24,7 +24,15 @@ plugins
         }
     }
 }());
-
+(function($){
+    $.fn.selectable = function(){
+        var main = $(this);
+        $(this).click(function(){
+            $(this).addClass('active');
+            $(this).siblings().removeClass('acitve');
+        })
+    }
+}(jQuery))
 // Place any jQuery/helper plugins in here.
 
 var mainSlider = $('#mainSlider').bxSlider({
@@ -85,3 +93,17 @@ $('#partnersNav li a').click(function(){
 })
 
 $('#awardsSlider .fancybox-gallery').fancybox();
+
+var cardCarousel = $('#cardSlider').bxSlider({
+    controls: false
+});
+
+$('#cardNav li').click(function(){
+    switch($(this).attr('class')){
+        case 'prev': cardCarousel.goToPrevSlide()
+        break
+        case 'next': cardCarousel.goToNextSlide()
+        break
+    }
+    return false;
+})

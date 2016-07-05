@@ -11,7 +11,7 @@ var gulp        = require('gulp'),
     jade 		= require('jade'),
     gulpJade 	= require('gulp-jade'),
     reload		= browserSync.reload,
-    page 		= 'index.html';
+    page 		= 'card.html';
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {

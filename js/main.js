@@ -37,5 +37,30 @@ jQuery(document).ready(function() {
     $('#time .day-num').text(time.getDate()+' ');
     $('#time .day-month').text(monthNames[time.getMonth()]+' ');
     $('#time .day-year').text(time.getFullYear());
+
+    $('#catalogButton').on('mouseover',function(){
+        $(this).addClass('active');
+        dropMenu();
+    })
+
+    function dropMenu(){
+        if ($('#catalogButton').is('.active')) {
+            $('.main-menu__dropdown').fadeIn(300);
+        }else{
+            $('.main-menu__dropdown').fadeOut(300);
+        }
+    }
+
+    $('.main-menu').on('mouseleave', function(){
+        $('#catalogButton').removeClass('active');
+        dropMenu();
+    })
+
+
+    //card-slider-pager centered
+    var cardPagerWidth = $('.card-slider .bx-default-pager').width();
+    $('.card-slider .bx-default-pager').css('margin-left', -(cardPagerWidth / 2));
 });
 
+
+    
