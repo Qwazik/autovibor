@@ -559,7 +559,7 @@ h2 {
     text-align: right;
     padding-right: 15px;
     box-sizing: border-box;
-    font-family: PragmaticaBold;
+    font-family: PragmaticaBook;
     span {
         vertical-align: middle;
         display: inline-block;
@@ -1445,6 +1445,12 @@ h3 + .nopadding{
     margin-top: 0;
 }
 
+.widget-news__more{
+    .more-news{
+        float: right;
+        margin-top: 0;
+    }
+}
 /*-------------------------------------------------*/
 /*    content-card
 /*-------------------------------------------------*/
@@ -1456,7 +1462,7 @@ h3 + .nopadding{
 }
 .card-slider{
     position: relative;
-    margin: -27px -35px;
+    margin: -28px -35px;
     margin-bottom: 27px;
     .bx-default-pager{
         left: 50%;
@@ -1673,6 +1679,7 @@ font-size: 16px;
 .category-item__col{
     width: 50%;
     float: left;
+    height: 336px;
 }
 
 .category__item.content-section{
@@ -1728,12 +1735,16 @@ font-size: 16px;
     transition: .3s all;
 }
 .category__item:hover{
+    cursor: pointer;
     background-color: #C3030E;
     .category__info:after{
         border-right-color: #C3030E;
     }
     .more, .category__desc, .category__item-name, .category__name{
         color:white;
+    }
+    .more:before{
+        background-position: -149px 0;
     }
 }
 

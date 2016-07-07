@@ -427,7 +427,7 @@ h2 {
   padding-right: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: PragmaticaBold; }
+  font-family: PragmaticaBook; }
   .catalog-button span {
     vertical-align: middle;
     display: inline-block; }
@@ -1139,6 +1139,10 @@ h2 {
 h3 + .nopadding {
   margin-top: 0; }
 
+.widget-news__more .more-news {
+  float: right;
+  margin-top: 0; }
+
 /*-------------------------------------------------*/
 /*    content-card
 /*-------------------------------------------------*/
@@ -1150,7 +1154,7 @@ h3 + .nopadding {
 
 .card-slider {
   position: relative;
-  margin: -27px -35px;
+  margin: -28px -35px;
   margin-bottom: 27px; }
   .card-slider .bx-default-pager {
     left: 50%;
@@ -1325,7 +1329,8 @@ h3 + .nopadding {
 /*-------------------------------------------------*/
 .category-item__col {
   width: 50%;
-  float: left; }
+  float: left;
+  height: 336px; }
 
 .category__item.content-section {
   margin-bottom: 0;
@@ -1376,11 +1381,14 @@ h3 + .nopadding {
   transition: .3s all; }
 
 .category__item:hover {
+  cursor: pointer;
   background-color: #C3030E; }
   .category__item:hover .category__info:after {
     border-right-color: #C3030E; }
   .category__item:hover .more, .category__item:hover .category__desc, .category__item:hover .category__item-name, .category__item:hover .category__name {
     color: white; }
+  .category__item:hover .more:before {
+    background-position: -149px 0; }
 
 /* ==========================================================================
    Helper classes
