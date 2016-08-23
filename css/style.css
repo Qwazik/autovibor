@@ -1476,6 +1476,58 @@ h3 + .nopadding {
   h3 {
     page-break-after: avoid; } }
 
+.er404 {
+  padding: 200px 0;
+  text-align: center;
+  color: white; }
+  .er404 a, .er404 p {
+    color: white; }
+  .er404__content {
+    display: inline-block;
+    text-align: left; }
+  .er404__left, .er404__right {
+    display: inline-block;
+    vertical-align: middle; }
+  .er404__left {
+    margin-right: 50px; }
+  .er404__right p {
+    width: 400px;
+    color: #8b8b8b;
+    font-family: PragmaticaBook;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 35px; }
+  .er404__right span:first-child {
+    font-family: PragmaticaExtraLight;
+    font-size: 48px;
+    line-height: 64px; }
+  .er404 .btns a {
+    display: inline-block;
+    text-decoration: none;
+    width: 145px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    background-color: #fff;
+    background-color: #D91C21;
+    color: #fdfcfc;
+    font-family: PragmaticaLight;
+    font-size: 18px;
+    margin-right: 10px;
+    -webkit-transition: .5s background-color;
+    transition: .5s background-color; }
+    .er404 .btns a:hover {
+      background-color: #ac161a; }
+  .er404 .btns a:first-child {
+    background-color: #6E6E6E; }
+    .er404 .btns a:first-child:hover {
+      background-color: #a1a1a1; }
+
+.er404-forbody {
+  background-color: #0D0D0C; }
+  .er404-forbody .main-header__center {
+    display: none; }
+
 @media screen and (max-width: 1400px) {
   .main-slider__wrap .slider-nav {
     display: none; } }
