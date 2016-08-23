@@ -1,0 +1,127 @@
+extends template
+
+block main
+	.main-slider__wrap
+		ul.slider-nav
+			li.prev
+			li.next
+		#mainSlider
+			.main-slider.one
+				.container
+					.slide-content
+						h2.light Полуприцеп Pezzaioli <br/>SBA63 maialino
+						p.light Полуприцеп Pezzaioli SBA63 maialino для перевозки исключительно свиней, поросят с 3-мя фиксированными поверхностями  загрузки (этажами)
+						a(href="#").button-red Подробнее
+			.main-slider.two
+				.container
+					.slide-content
+						h2.light Полуприцеп Pezzaioli <br/>SBA63 maialino
+						p.light Полуприцеп Pezzaioli SBA63 maialino для перевозки исключительно свиней, поросят с 3-мя фиксированными поверхностями  загрузки (этажами)
+						a(href="#").button-red Подробнее
+			.main-slider.three
+				.container
+					.slide-content
+						h2.light Полуприцеп Pezzaioli <br/>SBA63 maialino
+						p.light Полуприцеп Pezzaioli SBA63 maialino для перевозки исключительно свиней, поросят с 3-мя фиксированными поверхностями  загрузки (этажами)
+						a(href="#").button-red Подробнее
+			.main-slider.four
+				.container
+					.slide-content
+						h2.light Полуприцеп Pezzaioli <br/>SBA63 maialino
+						p.light Полуприцеп Pezzaioli SBA63 maialino для перевозки исключительно свиней, поросят с 3-мя фиксированными поверхностями  загрузки (этажами)
+						a(href="#").button-red Подробнее
+	//tabs-section ==========================
+	.main-tabs
+		.container
+			.tabs__wrap#mainTabs
+				ul.tabs-nav
+					li.active: a(href="#tab-category") Категории
+					li: a(href="#tab-spec") Спецпредложения
+				.tab-content#tab-category.active
+					ul.tabs-category
+						li.tabs-category__wrap
+							span.tabs-category__item
+								a.tabs-category__link(href="#") Новые<br/> скотовозы
+						li.tabs-category__wrap
+							span.tabs-category__item
+								a.tabs-category__link(href="#") Новые<br/> кормовозы
+						li.tabs-category__wrap
+							span.tabs-category__item
+								a.tabs-category__link(href="#") Новые<br/> птицевозы
+						li.tabs-category__wrap
+							span.tabs-category__item
+								a.tabs-category__link(href="#") Б/у<br/> техника
+						li.tabs-category__wrap
+							span.tabs-category__item
+								a.tabs-category__link(href="#") Ремонт<br/> кормовозов
+						li.tabs-category__wrap
+							span.tabs-category__item
+								a.tabs-category__link(href="#") Другая<br/> техника
+				.tab-content#tab-spec
+					h2 Спецпредложения
+	//about
+	.main-about
+		.container
+			.about-content
+				h2.light О компании
+				p.lightНаша компания является лидером среди поставщиков скотовозов, кормовозов, птицевозов, рефрижераторов и другой спецтехники в России.
+				p.light Мы предлагаем купить скотовозы, кормовозы и другую технику по выгодной цене и на лучших условиях!
+				p.light Как часто фермерским хозяйствам приходится перевозить коров, свиней, птицу или корм. И здесь не обойтись без специального транспорта. Тем более,  когда нужно отправить ценный груз за тысячи километров от собственной базы.
+				a.more(href="#") Подробнее
+	//news
+	.main-news
+		.container
+			h2.light Новости компании
+			.news-wrap
+				.news-item__wrap
+					.news-item.light
+						.time 29 февраля 2016
+						p В адрес ООО «Белая Птица  Ростов» поставлены 4ре станции с электроприводом на базе компрессорных агрегатов Gardner Denver XK12.
+						p.news__small Это уже не первые станции поставленные в адрес вышеназванного холдинга...
+				.news-item__wrap
+					.news-item
+						.time 29 февраля 2016
+						p На территории бывшей магаданской птицефабрики появится свинокомплекс
+						p.news__small Инвестиционный проект сформирован в рамках программы создания территории опережающего развития в регионе. Здесь появятся перерабатывающие предприятия
+						a(href="#").more Подробнее
+			.news-callback__wrap
+				.news-callback
+					p.title Оставьте заявку
+					p.desc Заполните форму и наши специалисты свяжуться с вами в ближайшее время
+					.callback-form
+						form(action="#")
+							.input-wrap: input(type="text" placeholder="Введите ваше имя")
+							.input-wrap: input(type="text" placeholder="Введите ваш email")
+							textarea(name="" placeholder="Введите текст комментария")
+							button(type='submit' ) Отправить
+			a(href="#").more-news Все новости
+	.main-awards
+		.container
+			.header__block.clearfix
+				h2 Наши награды
+				ul.nav#awardsNav
+					li.prev: a(href="#")
+					li.next: a(href="#")
+			.awards-slider
+				ul#awardsSlider
+					li.awards__item: a(data-fancybox-group="awards-gallary" href="img/1awards.jpg").fancybox-gallery: img(src="img/1awards.jpg", alt="")
+					li.awards__item: a(data-fancybox-group="awards-gallary" href="img/2awards.jpg").fancybox-gallery: img(src="img/2awards.jpg", alt="")
+					li.awards__item: a(data-fancybox-group="awards-gallary" href="img/3awards.jpg").fancybox-gallery: img(src="img/3awards.jpg", alt="")
+					li.awards__item: a(data-fancybox-group="awards-gallary" href="img/4awards.jpg").fancybox-gallery: img(src="img/4awards.jpg", alt="")
+					li.awards__item: a(data-fancybox-group="awards-gallary" href="img/5awards.jpg").fancybox-gallery: img(src="img/5awards.jpg", alt="")
+	// partners
+	.main-partners
+		.container
+			.header__block.clearfix
+				h2.light Наши партнеры
+				ul.nav#partnersNav
+					li.prev: a(href="#")
+					li.next: a(href="#")
+			.partners-slider
+				ul#partnersSlider
+					li.partners__item: a(href=""): img(src="img/1partner.jpg", alt="")
+					li.partners__item: a(href=""): img(src="img/2partner.jpg", alt="")
+					li.partners__item: a(href=""): img(src="img/3partner.jpg", alt="")
+					li.partners__item: a(href=""): img(src="img/4partner.jpg", alt="")
+					li.partners__item: a(href=""): img(src="img/5partner.jpg", alt="")
+

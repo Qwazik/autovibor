@@ -1,0 +1,56 @@
+extends template
+
+block main
+	include includes/breadcumbs
+	+breadcumbs
+	.main-content
+		.container
+			.content-header
+				h2 Наши контакты
+			.content-left
+				.content-section
+					.contacts-map.nopadding
+						script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=V7AmnXqknPhYG3FWUFLqhbPIQduJ0m44&width=100%&height=341&lang=ru_RU&sourceType=constructor&scroll=true")
+					.contacts-map__desc
+						strong ГК компаний ООО»АвтоВыбор.ру» (РФ), ООО «СПЕЦТЕХНИКА» (РФ), ООО «Просбелавто» (РБ)
+					.content-row
+						h3 Телефоны:
+						ul.contacts-phones
+							li (4832) 92-17-45                
+							li (4832) 92-22-54
+							li 8-903-818-0570
+						ul.contacts-info.clearfix
+							li.contacts-info__item
+								span.name Отдел продаж
+								span.phone 8-910-333-7754
+								span.phone 8-961-001-5151
+								span.email e-mail: <a href="mailto:autovyborsale@bk.ru">autovyborsale@bk.ru</a>
+							li.contacts-info__item
+								span.name Отдел заказа запчастей:
+								span.phone 8-905-100-8050
+								span.email e-mail: <a href="mailto:autovyborservis@bk.ru">autovyborservis@bk.ru</a>
+							li.contacts-info__item
+								span.name Бухгалтерия:
+								span.phone (4832) 92-96-67
+								span.email e-mail: <a href="mailto:autovybor-fin@bk.ru">autovybor-fin@bk.ru</a>
+					.content-row
+						h3 Адрес:
+						p 241520, Брянская обл., Брянский р-н, с. Супонево, ул. Комсомольская, 63
+					.content-row
+						h3 Схема проезда
+						.nopadding: img(src="img/contacts-shema.jpg", class="" alt="")
+					.content-row
+						h3 Наше представительство в Москве
+						ul.contacts-info.clearfix
+							li.contacts-info__item
+								span.name Адрес
+								span.phone 8-910-333-7754
+							li.contacts-info__item
+								span.name Телефон
+								span.phone 8-905-100-8050
+							li.contacts-info__item
+								span.name Email
+								span.email <a href="mailto:autovybor-fin@bk.ru">autovybor-fin@bk.ru</a>
+			.content-right
+				include includes/content-right
+
